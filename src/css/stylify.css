@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Sofia|Trirong|Yusei+Magic|Hachi+Maru+Pop|Balsamiq+Sans');
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.style h1 {
+  font-family: 'Yusei Magic', sans-serif;
+}
+.style h3 {
+  font-family: 'Yusei Magic', sans-serif;
+}
+.style h5 {
+  font-family: 'Yusei Magic', sans-serif;
+  color:lightgreen;
+}
+.style input {
+  background-color: rgb(193, 223, 255);
+  font-family: 'Yusei Magic', sans-serif;
+}
+.style pre {
+  background-color: rgb(193, 223, 255);
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 520px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 200px;
+  margin: 0px auto 20px;
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 70px;
+  font-weight: 200;
+  margin: 0px;
+  color: #211b19;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  user-select: none;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound .notfound-404 h1:hover {
+  color: #4baffc;
+  font-size: 82px;
+}
+
+.notfound .notfound-404 h2 {
+  font-family: 'Hachi Maru Pop', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  padding: 10px 5px;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 25%;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound .notfound-404 h2:hover {
+  color: #3efd34;
+  font-size: 25px;
+}
+
+.notfound .notfound-404 .social-media h3 {
+  font-family: 'Hachi Maru Pop', sans-serif;
+  font-size: 15px;
+  user-select: none;
+  font-weight: 450;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 77%;
+  left: 16%;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound .notfound-404 .social-media h3:hover {
+  color: #09faf6;
+  font-size: 15.5px;
+}
+
+.notfound .notfound-404 .social-media h4 {
+  font-family: 'Hachi Maru Pop', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  position: absolute;
+  user-select: none;
+  bottom: 42px;
+  top: 75%;
+  left: 0;
+  right: 30%;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound .notfound-404 .social-media h4:hover {
+  color: #4834fd;
+}
+
+.notfound a {
+  font-family: 'Balsamiq Sans', sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: #211b19;
+  font-size: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  color: #211b19;
+  background: rgb(232, 231, 231);
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 {
+    height: 148px;
+    margin: 0px auto 10px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 86px;
+  }
+  .notfound .notfound-404 h2 {
+    font-size: 16px;
+  }
+  .notfound a {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 5px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  animation: animatetop;
+  animation-duration: 0.5s;
+  text-align: center;
+}
+
+.modal-content h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  padding: 2%;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.modal-content a {
+  font-family: 'Balsamiq Sans', sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: #211b19;
+  font-size: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.modal-content a:hover {
+  color: #211b19;
+  background: rgb(232, 231, 231);
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  animation: animatedown;
+  animation-duration: 0.5s
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+@keyframes animatedown {
+  from {top: -300px; opacity: 1}
+  to {top: 0; opacity: 0}
+}
+

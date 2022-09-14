@@ -1,0 +1,20 @@
+
+#project:hover {
+    -webkit-animation: green 1s ease-in-out infinite alternate;
+    -moz-animation: green 1s ease-in-out infinite alternate;
+}
+
+#sitemap:hover {
+    -webkit-animation: green 1s ease-in-out infinite alternate;
+    -moz-animation: green 1s ease-in-out infinite alternate;
+}
+
+@keyframes green {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e660, 0 0 40px #00e660, 0 0 50px #00e660, 0 0 60px #00e660, 0 0 70px #00e660;
+    };
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #9ceebe, 0 0 40px #9ceebe, 0 0 50px #9ceebe, 0 0 60px #9ceebe, 0 0 70px #9ceebe, 0 0 80px #9ceebe;
+    };
+};
+

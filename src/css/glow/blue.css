@@ -1,0 +1,15 @@
+
+#glowBlue:hover {
+    -webkit-animation: blue 1s ease-in-out infinite alternate;
+    -moz-animation: blue 1s ease-in-out infinite alternate;
+}
+@keyframes blue {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00a5e6, 0 0 40px #00a5e6, 0 0 50px #00a5e6, 0 0 60px #00a5e6, 0 0 70px #00a5e6;
+    };
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #71c1e1, 0 0 40px #71c1e1, 0 0 50px #71c1e1, 0 0 60px #71c1e1, 0 0 70px #71c1e1, 0 0 80px #71c1e1;
+    };
+};
+
+

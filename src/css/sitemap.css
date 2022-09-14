@@ -1,0 +1,49 @@
+.sitemap-content {
+    border-radius: 5px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    animation: animatetop;
+    animation-duration: 0.5s;
+    text-align: center;
+}
+
+.sitemap-content h2 {
+    font-family: 'Yusei Magic', sans-serif;
+    /* text-decoration: underline; */
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    user-select: none;
+    color: #211b19;
+    margin: auto;
+    padding: 2%;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.sitemap-content a {
+    font-family: 'Balsamiq Sans', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 23px;
+    background: #211b19;
+    font-size: 15px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+.sitemap-content a:hover {
+    color: #211b19;
+    background: #839ffa;
+}
+
+
+#thebutton:hover {
+    color: #211b19;
+    background: #fa8383;
+}
